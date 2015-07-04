@@ -27,6 +27,8 @@ Install through the WordPress directory or download, unzip and upload the files 
 = 1.0.0 =
 * Initial Release
 
-= 1.0.1 =
+= 1.1.0 =
 * Added i18n
+* Added da, de ,en, es, fr, nl and ru translations
+* Fixed an issue with filename not being pulled over on failed uploads
 
