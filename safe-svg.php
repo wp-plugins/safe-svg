@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: Safe SVG
-Plugin URI:  http://wordpress.org/extend/plugins/health-check/
+Plugin URI:  https://wordpress.org/plugins/safe-svg/
 Description: Allows SVG uploads into Wordpress and sanitizes the SVG before saving it
-Version:     1.0.0
+Version:     1.1.0
 Author:      Daryll Doyle
 Author URI:  http://enshrined.co.uk
 Text Domain: safe-svg
@@ -62,10 +62,8 @@ if ( ! class_exists( 'safe_svg' ) ) {
 
             if ( $file['type'] === 'image/svg+xml' ) {
                 if ( ! $this->sanitize( $file['tmp_name'] ) ) {
-                    return array(
-                        'error' => __( "Sorry, this file couldn't be sanitized so for security reasons wasn't uploaded",
-                            'safe-svg' )
-                    );
+                    $file['error'] = __( "Sorry, this file couldn't be sanitized so for security reasons wasn't uploaded",
+                        'safe-svg' );
                 }
             }
 

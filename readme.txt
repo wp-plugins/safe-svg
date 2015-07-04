@@ -1,10 +1,10 @@
 === Safe SVG ===
 Contributors: enshrined
 Donate link: http://enshrined.co.uk
-Tags: svg, sanitize, uploads, sanitise
+Tags: svg, sanitize, uploads, sanitise, security, svg upload
 Requires at least: 4.0
-Tested up to: 4.2.2
-Stable tag: 1.0.0
+Tested up to: 4.3
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,4 +27,8 @@ Install through the WordPress directory or download, unzip and upload the files 
 = 1.0.0 =
 * Initial Release
 
+= 1.1.0 =
+* Added i18n
+* Added da, de ,en, es, fr, nl and ru translations
+* Fixed an issue with filename not being pulled over on failed uploads
 
